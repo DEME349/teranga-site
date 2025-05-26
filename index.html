@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Téranga_Délices - Restaurant Sénégalais</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #e65100;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('./image2.avif');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .galerie-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .galerie-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #e65100;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Téranga_Délices</strong></div>
+    <nav>
+      <a href="#accueil" class="active">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#apropos">A propos</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#reservations">Réservations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <h1>La chaleur du Sénégal dans votre assiette</h1>
+    <p>Découvrez les saveurs authentiques du Sénégal</p>
+  </section>
+
+  <section class="section" id="menu">
+  <h2>Menu</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+    <div style="width: 180px; text-align: center;">
+      <img src="thiebou dieune.jpg" alt="Thieboudienne" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+      <h4>Thieboudienne</h4>
+      <p>Riz au poisson traditionnel, légumes</p>
+    </div>
+
+    <div style="width: 180px; text-align: center;">
+      <img src="yassa.jpg" alt="Yassa Poulet" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+      <h4>Yassa Poulet</h4>
+      <p>Marinade citronnée, riz parfumé</p>
+    </div>
+
+    <div style="width: 180px; text-align: center;">
+      <img src="mafé.jpg" alt="Mafé" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+      <h4>Mafé</h4>
+      <p>Sauce arachide, viande tendre</p>
+    </div>
+
+    <div style="width: 180px; text-align: center;">
+      <img src="dessert1.jpg" alt="dessert1" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+      <h4>Dessert</h4>
+      <p>sucré et glacé</p>
+    </div>
+
+    <div style="width: 180px; text-align: center;">
+      <img src="dessert2.jpg" alt="dessert2" style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+      <h4>Thiakry</h4>
+      <p>Couscous de mil au lait doux</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="section" id="apropos">
+    <h2>A propos</h2>
+    <p>Notre histoire
+
+        Tout a commencé dans la cuisine de notre grand-mère à Saint-Louis, où les parfums du Thieboudienne mijotaient lentement pendant que les enfants riaient et jouaient sous les baobabs. Ce goût inoubliable, ce sens de la convivialité et cette générosité culinaire ont traversé les générations pour donner naissance à Teranga Délices.
+
+        "Teranga", c’est bien plus qu’un mot. C’est l’âme de l’hospitalité sénégalaise : recevoir avec le cœur, partager avec le sourire, cuisiner avec amour.
+
+        Notre restaurant est né de cette envie de faire découvrir au monde la richesse de la gastronomie sénégalaise. Chaque plat est préparé selon les recettes traditionnelles, avec des ingrédients frais, des épices locales et un profond respect des saveurs d’origine.
+
+        Teranga Délices, c’est un lieu où chaque client est un invité d’honneur. Que vous veniez pour un simple déjeuner ou une grande célébration, vous êtes accueillis comme à la maison — avec chaleur, respect et passion.</p>
+ </section> 
+
+  <section class="section" id="galerie">
+  <h2>Galerie</h2>
+  <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+    <img src="image2.avif" alt="Plat 1" style="width: 300px; height: 200px; object-fit: cover; border-radius: 8px;">
+    <img src="image3.avif" alt="Plat 2" style="width: 300px; height: 200px; object-fit: cover; border-radius: 8px;">
+    <img src="image4.avif" alt="Plat 3" style="width: 300px; height: 200px; object-fit: cover; border-radius: 8px;">
+  </div>
+</section>
+
+
+  <section class="section" id="reservations">
+  <h2>Réservations</h2>
+
+  <form id="reservation-form" action="https://formspree.io/f/xqaqvyyd" method="POST">
+    <label>Nom:<br><input type="text" name="nom" required></label><br><br>
+    <label>Date:<br><input type="date" name="date" required></label><br><br>
+    <label>Heure:<br><input type="time" name="heure" required></label><br><br>
+    <label>Nombre de personnes:<br><input type="number" name="personnes" min="1" required></label><br><br>
+    <label>Email ou Téléphone:<br><input type="text" name="contact" required></label><br><br>
+    <button type="submit">Réserver</button>
+  </form>
+
+  <p id="confirmation" style="display:none; color: green; font-weight: bold; margin-top: 1rem;">
+    Merci pour votre réservation ! Nous vous contacterons bientôt.
+  </p>
+</section>
+
+<script>
+  const form = document.getElementById('reservation-form');
+  const confirmation = document.getElementById('confirmation');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        confirmation.style.display = 'block';
+      } else {
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      }
+    });
+  });
+</script>
+
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Adresse : Rue des Saveurs, Dakar, Sénégal</p>
+  <p>Email : terangadelices@gmail.com</p>
+  <p>Tél : +221 78 534 43 31- 78 430 55 22</p>
+  <p>Horaires : Lun-Dim, 12h - 23h</p>
+
+  <div style="margin-top: 20px;">
+    <a href="https://wa.me/221785344331" target="_blank" style="margin-right: 15px; text-decoration: none; color: green;">WhatsApp</a>
+    <a href="https://www.instagram.com/serigne_moustapha_deme" target="_blank" style="margin-right: 15px; text-decoration: none; color: #C13584;">Instagram</a>
+    <a href="https://www.facebook.com/general.deme" target="_blank" style="text-decoration: none; color: #3b5998;">Facebook</a>
+  </div>
+</section>
+
+
+<footer>
+  <p><a href="confidentialité.html">Politique de confidentialité</a> <br>En utilisant notre site, vous acceptez cette politique.</p>
+  <p>&copy; 2025 Teranga Délices. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
